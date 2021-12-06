@@ -129,19 +129,19 @@ header {
 	justify-content: space-around;
 }
 
-.menu_bar_item:nth-child(1) {
+.menu_bar_item1 {
 	width: 300px;
 	height: 375px;
 	background-image: url("img/кокт.jpeg");
 	background-size: 100% 100%;
 }
-.menu_bar_item:nth-child(2) {
+.menu_bar_item2 {
 	width: 300px;
 	height: 375px;
 	background-image: url("img/десерт.jpeg");
 	background-size: 100% 100%;
 }
-.menu_bar_item:nth-child(3) {
+.menu_bar_item3 {
 	width: 300px;
 	height: 375px;
 	background-image: url("img/закуски.jpeg");
