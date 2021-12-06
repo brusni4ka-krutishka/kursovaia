@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+body {
+	font-family: "Lora", serif !important;
+}
 a {
 	text-decoration: none;
 }
@@ -40,7 +44,7 @@ header {
 	gap: 55px;
 }
 #nav_bar ul li {
-	min-width: 40px;
+	min-width: 45px;
 }
 
 #first_block {
@@ -129,19 +133,19 @@ header {
 	justify-content: space-around;
 }
 
-.menu_bar_item:nth-child(1) {
+.menu_bar_item1 {
 	width: 300px;
 	height: 375px;
 	background-image: url("img/кокт.jpeg");
 	background-size: 100% 100%;
 }
-.menu_bar_item:nth-child(2) {
+.menu_bar_item2 {
 	width: 300px;
 	height: 375px;
 	background-image: url("img/десерт.jpeg");
 	background-size: 100% 100%;
 }
-.menu_bar_item:nth-child(3) {
+.menu_bar_item3 {
 	width: 300px;
 	height: 375px;
 	background-image: url("img/закуски.jpeg");
