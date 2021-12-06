@@ -123,7 +123,72 @@ h2 {
   background: green;
 }
 
+.eat {
+  margin-top: 10%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.eat_text {
+  width: 40%;
+  margin-top: 10%;
+  margin-left: 31%;
+  font-size: 35px;
+}
+
+.menu_button {
+  width: 20%;
+  margin-top: 15%;
+  margin-left: 40%;
+  height: 45px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
 .menu1kategoria {
+  align-items: center;
+  margin-top: 150px;
+  background: url("img/краб.jpeg") no-repeat;
+  background-size: 100% 650px;
+  width: 50%;
+  height: 650px;
+}
+
+.text_menu1kategoria {
+  margin-top: 150px;
+  background: white;
+  width: 50%;
+  height: 650px;
+}
+
+.menu2kategoria {
+  align-items: center;
+  background: url("img/зонт.jpeg") no-repeat;
+  background-size: 100% 650px;
+  width: 50%;
+  height: 650px;
+}
+
+.text_menu2kategoria {
+  background: white;
+  width: 50%;
+  height: 650px;
+}
+
+.menu3kategoria {
+  align-items: center;
+  background: url("img/десерты.jpeg") no-repeat;
+  background-size: 100% 650px;
+  width: 50%;
+  height: 650px;
+}
+
+.text_menu3kategoria {
+  background: white;
+  width: 50%;
+  height: 650px;
   padding-top: 150px;
   background: green;
   width: 50%;
