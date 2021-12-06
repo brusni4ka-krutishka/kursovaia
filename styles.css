@@ -199,7 +199,14 @@ h2 {
 
 .description {
 	float: right;
-	width: 30%;
+	width: 40%;
+	margin-top: 2%;
+}
+
+.line {
+	border-bottom: 1px solid black;
+	width: 60%;
+	margin-left: 18%;
 }
 
 .menu_zakuski {
@@ -208,4 +215,11 @@ h2 {
 	width: 100%;
 	height: 650px;
 }
+
+.cost {
+	font-size: 50px;
+	margin: 10px;
+	text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
