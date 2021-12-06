@@ -219,40 +219,26 @@ header {
 	background: white;
 	width: 50%;
 	height: 650px;
-	padding-top: 150px;
-	background: green;
-	width: 50%;
-	height: 650px;
 }
 
-.text_menu1kategoria {
-	padding-top: 150px;
-	background: magenta;
-	width: 50%;
-	height: 650px;
+.names {
+	font-size: 40px;
+	margin-left: 20%;
 }
 
-.menu2kategoria {
-	background: yellow;
-	width: 50%;
-	height: 650px;
+.zakuski_photo {
+	margin: 20px;
 }
 
-.text_menu2kategoria {
-	background: purple;
-	width: 50%;
-	height: 650px;
+.description {
+	float: right;
+	width: 30%;
 }
 
-.menu3kategoria {
-	background: orange;
-	width: 50%;
-	height: 650px;
-}
-
-.text_menu3kategoria {
-	background: cyan;
-	width: 50%;
+.menu_zakuski {
+	margin-top: 150px;
+	background: white;
+	width: 100%;
 	height: 650px;
 }
 
