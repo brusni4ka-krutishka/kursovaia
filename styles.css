@@ -39,6 +39,9 @@ header {
 	display: flex;
 	gap: 55px;
 }
+#nav_bar ul li {
+	min-width: 40px;
+}
 
 #first_block {
 	padding-top: 150px;
@@ -216,5 +219,57 @@ header {
 	background: white;
 	width: 50%;
 	height: 650px;
+	padding-top: 150px;
+	background: green;
+	width: 50%;
+	height: 650px;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.text_menu1kategoria {
+	padding-top: 150px;
+	background: magenta;
+	width: 50%;
+	height: 650px;
+}
+
+.menu2kategoria {
+	background: yellow;
+	width: 50%;
+	height: 650px;
+}
+
+.text_menu2kategoria {
+	background: purple;
+	width: 50%;
+	height: 650px;
+}
+
+.menu3kategoria {
+	background: orange;
+	width: 50%;
+	height: 650px;
+}
+
+.text_menu3kategoria {
+	background: cyan;
+	width: 50%;
+	height: 650px;
+}
+
+#foot_container {
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+	margin: 2% auto;
+}
+.podpiski {
+	display: flex;
+}
+.container2 {
+	text-align: center;
+}
+.podpiski img {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
