@@ -1,211 +1,228 @@
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 header {
-	display: -webkit-box !important;
-	display: -ms-flexbox !important;
-	display: flex !important;
-	width: 100%;
-	height: 150px;
-	background: white;
-	vertical-align: middle;
-	position: fixed;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 100%;
+  height: 150px;
+  background: white;
+  vertical-align: middle;
+  position: fixed;
 }
 
 .head_container {
-	width: 80%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	gap: 55%;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	margin: auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 55%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
 }
 
 #logo {
-	width: 200px;
-	height: 80px;
+  width: 200px;
+  height: 80px;
 }
 
 #nav_bar ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	gap: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 55px;
 }
 
 #first_block {
-	padding-top: 150px;
-	height: 600px;
-	width: 100%;
-	background: chartreuse;
+  padding-top: 150px;
+  height: 600px;
+  width: 100%;
+  background: chartreuse;
 }
 
 #glavnaia1kartinka {
-	height: 600px;
-	width: 100%;
+  height: 600px;
+  width: 100%;
 }
 
 .inner_text {
-	text-align: center;
-	display: block;
-	width: 55%;
-	margin: auto;
-	padding-top: 10%;
+  text-align: center;
+  display: block;
+  width: 55%;
+  margin: auto;
+  padding-top: 10%;
 }
 
 h1 {
-	font-size: 36px !important;
+  font-size: 36px !important;
 }
 
 h2 {
-	font-size: 32px !important;
+  font-size: 32px !important;
 }
 
 #second_block {
-	background: chocolate;
-	width: 100%;
-	height: 600px;
+  background: chocolate;
+  width: 100%;
+  height: 600px;
 }
 
 .morebtn {
-	width: 100px;
-	height: 60px;
-	text-align: center;
-	background-color: none;
-	border: 2px white solid;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  background-color: none;
+  border: 2px white solid;
 }
 
 .morebtn:hover {
-	background-color: gray;
+  background-color: gray;
 }
 
 #third_block {
-	background: #1b2018;
-	width: 100%;
-	height: 600px;
+  background: #1b2018;
+  width: 100%;
+  height: 600px;
 }
 
 #menu_bar {
-	text-align: center;
-	display: block;
-	width: 75%;
-	margin: auto;
-	padding-top: 3%;
+  text-align: center;
+  display: block;
+  width: 75%;
+  margin: auto;
+  padding-top: 3%;
 }
 
 #menu_bar h2 {
-	position: relative;
-	text-align: left;
+  position: relative;
+  text-align: left;
 }
 
 #menu_bar_container {
-	margin-top: 60px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .menu_bar_item {
-	width: 300px;
-	height: 375px;
-	background: green;
+  width: 300px;
+  height: 375px;
+  background: green;
 }
 
 .eat {
-	margin-top: 10%;
-	text-align: center;
-	font-size: 50px;
-	font-weight: bold;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .eat_text {
-	width: 40%;
-	margin-top: 10%;
-	margin-left: 31%;
-	font-size: 35px;
+  width: 40%;
+  margin-top: 10%;
+  margin-left: 31%;
+  font-size: 35px;
 }
 
 .menu_button {
-	width: 20%;
-	margin-top: 15%;
-	margin-left: 40%;
-	height: 45px;
-	background-color: white;
-	border: 1px solid black;
-	border-radius: 20px;
+  width: 20%;
+  margin-top: 15%;
+  margin-left: 40%;
+  height: 45px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
 .menu1kategoria {
-	align-items: center;
-	margin-top: 150px;
-	background: url("img/краб.jpeg") no-repeat;
-	background-size: 100% 650px;
-	width: 50%;
-	height: 650px;
+  align-items: center;
+  margin-top: 150px;
+  background: url("img/краб.jpeg") no-repeat;
+  background-size: 100% 650px;
+  width: 50%;
+  height: 650px;
 }
 
 .text_menu1kategoria {
-	margin-top: 150px;
-	background: white;
-	width: 50%;
-	height: 650px;
+  margin-top: 150px;
+  background: white;
+  width: 50%;
+  height: 650px;
 }
 
 .menu2kategoria {
-	align-items: center;
-	background: url("img/зонт.jpeg") no-repeat;
-	background-size: 100% 650px;
-	width: 50%;
-	height: 650px;
+  align-items: center;
+  background: url("img/зонт.jpeg") no-repeat;
+  background-size: 100% 650px;
+  width: 50%;
+  height: 650px;
 }
 
 .text_menu2kategoria {
-	background: white;
-	width: 50%;
-	height: 650px;
+  background: white;
+  width: 50%;
+  height: 650px;
 }
 
 .menu3kategoria {
-	align-items: center;
-	background: url("img/десерты.jpeg") no-repeat;
-	background-size: 100% 650px;
-	width: 50%;
-	height: 650px;
+  align-items: center;
+  background: url("img/десерты.jpeg") no-repeat;
+  background-size: 100% 650px;
+  width: 50%;
+  height: 650px;
 }
 
 .text_menu3kategoria {
-	background: white;
-	width: 50%;
-	height: 650px;
+  background: white;
+  width: 50%;
+  height: 650px;
 }
 
 .names {
-	font-size: 40px;
-	margin-left: 20%;
+  font-size: 40px;
+  margin-left: 20%;
 }
 
 .zakuski_photo {
-	margin: 20px;
+  margin: 20px;
 }
 
 .description {
-	float: right;
-	width: 30%;
+  float: right;
+  width: 30%;
 }
 
 .menu_zakuski {
-	margin-top: 150px;
-	background: white;
-	width: 100%;
-	height: 650px;
+  margin-top: 150px;
+  background: white;
+  width: 100%;
+  height: 650px;
 }
-/*# sourceMappingURL=styles.css.map */
+
+#foot_container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2% auto;
+}
+.podpiski {
+  display: flex;
+}
+.container2 {
+  text-align: center;
+}
+.podpiski img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
