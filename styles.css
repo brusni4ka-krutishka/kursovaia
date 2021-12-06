@@ -39,12 +39,16 @@ header {
 	display: flex;
 	gap: 55px;
 }
+#nav_bar ul li {
+	min-width: 40px;
+}
 
 #first_block {
 	padding-top: 150px;
-	height: 600px;
+	height: 800px;
 	width: 100%;
-	background: chartreuse;
+	background-image: url("img/главная1.jpeg");
+	background-size: 100%;
 }
 
 #glavnaia1kartinka {
@@ -53,43 +57,53 @@ header {
 }
 
 .inner_text {
-	text-align: center;
 	display: block;
 	width: 55%;
-	margin: auto;
+	margin-left: 200px;
 	padding-top: 10%;
 }
-
-h1 {
-	font-size: 36px !important;
+.inner_text_hello {
+	color: white;
+	font-size: 70px;
+	text-align: center;
+	margin-left: 90px;
+	width: 1000px;
 }
-
-h2 {
-	font-size: 32px !important;
+.inner_text_hello_txt {
+	color: white;
+	margin-left: 150px;
+	width: 1000px;
+	font-size: 40px;
+	margin-top: 100px;
 }
-
+.inner_text_who {
+	margin-left: 20px;
+	font-size: 40px;
+}
+.inner_text_who_txt {
+	margin-top: 70px;
+	font-size: 36px;
+}
 #second_block {
-	background: chocolate;
 	width: 100%;
-	height: 600px;
+	height: 800px;
+	background-image: url("img/рррр.jpeg");
+	background-size: 100%;
 }
 
 .morebtn {
-	width: 100px;
+	width: 150px;
 	height: 60px;
 	text-align: center;
-	background-color: none;
-	border: 2px white solid;
-}
-
-.morebtn:hover {
-	background-color: gray;
+	font-size: 36px;
+	margin-left: 350px;
 }
 
 #third_block {
-	background: #1b2018;
 	width: 100%;
-	height: 600px;
+	height: 800px;
+	background-image: url("img/rrr.jpeg");
+	background-size: 100% 100%;
 }
 
 #menu_bar {
@@ -97,12 +111,13 @@ h2 {
 	display: block;
 	width: 75%;
 	margin: auto;
-	padding-top: 3%;
+	padding-top: 6%;
 }
 
 #menu_bar h2 {
-	position: relative;
 	text-align: left;
+	font-size: 70px;
+	margin-left: -100px;
 }
 
 #menu_bar_container {
@@ -114,10 +129,28 @@ h2 {
 	justify-content: space-around;
 }
 
-.menu_bar_item {
+.menu_bar_item:nth-child(1) {
 	width: 300px;
 	height: 375px;
-	background: green;
+	background-image: url("img/кокт.jpeg");
+	background-size: 100% 100%;
+}
+.menu_bar_item:nth-child(2) {
+	width: 300px;
+	height: 375px;
+	background-image: url("img/десерт.jpeg");
+	background-size: 100% 100%;
+}
+.menu_bar_item:nth-child(3) {
+	width: 300px;
+	height: 375px;
+	background-image: url("img/закуски.jpeg");
+	background-size: 100% 100%;
+}
+.menu_bar_item_text {
+	margin-top: 300px;
+	color: white;
+	font-size: 40px;
 }
 
 .eat {
@@ -223,3 +256,20 @@ h2 {
 }
 
 /*# sourceMappingURL=styles.css.map */
+#foot_container {
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+	margin: 2% auto;
+}
+.podpiski {
+	display: flex;
+}
+.container2 {
+	text-align: center;
+}
+.podpiski img {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
