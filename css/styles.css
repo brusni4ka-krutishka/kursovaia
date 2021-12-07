@@ -128,20 +128,23 @@ header {
 .menu_bar_item:nth-child(1) {
   width: 300px;
   height: 375px;
-  background-image: url("../img/кокт.jpeg");
-  background-size: 100% 100%;
+  background-image: url("../img/закуски.jpeg");
+  background-size: cover;
+  border-radius: 10%;
 }
 .menu_bar_item:nth-child(2) {
   width: 300px;
+  background-image: url("../img/кокт.jpeg");
   height: 375px;
-  background-image: url("../img/десерт.jpeg");
-  background-size: 100% 100%;
+  background-size: cover;
+  border-radius: 10%;
 }
 .menu_bar_item:nth-child(3) {
   width: 300px;
   height: 375px;
-  background-image: url("../img/закуски.jpeg");
-  background-size: 100% 100%;
+  background-image: url("../img/десерт.jpeg");
+  border-radius: 10%;
+  background-size: cover;
 }
 .menu_bar_item_text {
   margin-top: 300px;
