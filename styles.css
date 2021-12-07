@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 body {
   font-family: "Lora", serif;
+  font-size: 18pt;
 }
 a {
   text-decoration: none;
@@ -19,15 +20,8 @@ header {
 
 .head_container {
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 55%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  justify-content: space-around;
   align-items: center;
   margin: auto;
 }
@@ -42,9 +36,10 @@ header {
   display: -ms-flexbox;
   display: flex;
   gap: 55px;
+  font-size: 16pt;
 }
 #nav_bar ul li {
-  min-width: 40px;
+  min-width: 50px;
 }
 
 #first_block {
@@ -63,20 +58,17 @@ header {
 .inner_text {
   display: block;
   width: 55%;
-  margin-left: 200px;
+  margin: auto;
   padding-top: 10%;
+  text-align: center;
 }
 .inner_text_hello {
   color: white;
   font-size: 70px;
   text-align: center;
-  margin-left: 90px;
-  width: 1000px;
 }
 .inner_text_hello_txt {
   color: white;
-  margin-left: 150px;
-  width: 1000px;
   font-size: 40px;
   margin-top: 100px;
 }
@@ -243,6 +235,7 @@ header {
 .photo_eda {
   width: 40%;
   height: 20%;
+  padding-left: 15%;
 }
 
 .description {
@@ -279,10 +272,10 @@ header {
 .text_zakuski {
   font-size: 24px;
   margin: auto;
-  margin-left: 20px;
   margin-top: 30px;
   line-height: 160%;
   margin-bottom: 30px;
+  width: 70%;
 }
 
 .koktail_eda {
@@ -295,7 +288,6 @@ header {
   margin-bottom: 50px;
 }
 
-/*# sourceMappingURL=styles.css.map */
 #foot_container {
   width: 75%;
   display: flex;
@@ -313,5 +305,5 @@ header {
   height: 50px;
   margin-right: 10px;
 }
-.up_menu {
-}
+/* .up_menu {
+} */
