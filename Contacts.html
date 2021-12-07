@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head id="head"> </head>
-  <body>
-    <header id="header"></header>
-    <main>
-      <div class="containt">
-        <div id="a"></div>
-        <div id="b">
-          <h2 style="font-style: 700; font-size: 26pt">Наш адрес</h2>
-          <br />
-          <p>Комсомольский проспект блаблаблабла</p>
-          <br />
-          <h2 style="font-style: 700; font-size: 26pt">Время работы</h2>
-          <br />
-          <p>9:00 - 20:00</p>
-          <br />
-          <h2 style="font-style: 700; font-size: 26pt">+7359454213</h2>
-          <h2 style="font-style: 700; font-size: 26pt">+7359454213</h2>
-        </div>
-      </div>
-    </main>
-    <footer id="footer"></footer>
-    <script>
-      function initMap() {
-        const uluru = { lat: 53.9006042, lng: 27.5567833 };
+	<head id="head"> </head>
+	<body>
+		<header id="header"></header>
+		<main>
+			<div class="containt">
+				<div id="a"></div>
+				<div id="b">
+					<h2 style="font-style: 700; font-size: 26pt">Наш адрес</h2>
+					<br />
+					<p>Бали, Индонезия</p>
+					<br />
+					<h2 style="font-style: 700; font-size: 26pt">
+						Время работы
+					</h2>
+					<br />
+					<p>Круглосуточно</p>
+					<br />
+					<h2 style="font-style: 700; font-size: 26pt">
+						+(62-21) 522-29-12
+					</h2>
+					<h2 style="font-style: 700; font-size: 26pt">
+						+(62-21) 496-29щ-12
+					</h2>
+				</div>
+			</div>
+		</main>
+		<footer id="footer"></footer>
+		<script>
+			function initMap() {
+				const uluru = { lat: 53.9006042, lng: 27.5567833 };
 
-        const map = new google.maps.Map(document.getElementById("a"), {
-          zoom: 15,
-          center: uluru,
-        });
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
-    </script>
+				const map = new google.maps.Map(document.getElementById("a"), {
+					zoom: 15,
+					center: uluru,
+				});
+				const marker = new google.maps.Marker({
+					position: uluru,
+					map: map,
+				});
+			}
+		</script>
 
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT5laHMJCZa6kKqXfkwiDeaZwJaj3OwIc&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
-    <script src="./js/script.js"></script>
-  </body>
+		<script
+			async
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT5laHMJCZa6kKqXfkwiDeaZwJaj3OwIc&callback=initMap&libraries=&v=weekly"
+			async
+		></script>
+		<script src="./js/script.js"></script>
+	</body>
 </html>
