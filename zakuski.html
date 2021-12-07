@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <!-- reset для сброса стандартных стилей -->
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Коктейль-бар</title>
+  </head>
+  <body>
+    <header>
+      <div class="head_container">
+        <img src="./img/logo.png" alt="" id="logo" />
+        <nav id="nav_bar">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="About.html">О нас</a></li>
+            <li><a href="Contacts.html">Контакты</a></li>
+            <li><a href="Search.html">Поиск</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div style="display: flex">
+        <div class="menu_zakuski" id="first_zakuska">
+          <p class="names">Наси Ундук</p>
+          <div class="zakuski_photo">
+            <img src="img блюда/наси удук.jpeg" class="photo_eda" />
+            <div class="description">
+              <div>&nbsp;</div>
+              <p class="cost">Цена: 4$</p>
+              <div class="line"></div>
+              <div>&nbsp;</div>
+              <p class="cost">Размер порции</p>
+              <p class="cost" id="weight">Вес: 320г</p>
+              <div>&nbsp;</div>
+              <div class="line"></div>
+              <div>&nbsp;</div>
+            </div>
+          </div>
+          <p class="text_zakuski">
+            Изюминкой блюда Наси Удук является рис, который готовят с кокосовым
+            молоком и травами для создания ароматной основы блюда. Затем он
+            подается с курицей или говядиной, яйцами и огурцом, украшенными
+            жареным луком-шалот и керупуком (индонезийские крекеры). Рецепт Наси
+            Удук пришел в Индонезию из Джакарты, где люди часто кушают его на
+            завтрак, иногда даже на ходу.
+          </p>
+        </div>
+      </div>
+      <div style="display: flex">
+        <div class="menu_zakuski">
+          <p class="names">Говядина Ренданг</p>
+          <div class="zakuski_photo">
+            <img src="img блюда/говядина.jpeg" class="photo_eda" />
+            <div class="description">
+              <div>&nbsp;</div>
+              <p class="cost">Цена: 3.50$</p>
+              <div class="line"></div>
+              <div>&nbsp;</div>
+              <p class="cost">Размер порции</p>
+              <p class="cost" id="weight">Вес: 450г</p>
+              <div>&nbsp;</div>
+              <div class="line"></div>
+              <div>&nbsp;</div>
+            </div>
+          </div>
+          <p class="text_zakuski">
+            Это индонезийское мясное блюдо готовится из мягчайшей говядины на
+            очень медленном огне. Родиной Говядины Реданг считается Западная
+            Суматра, однако, и в Индонезии она пользуется огромной популярностью
+            как в больших ресторанах, так и в скромных кафе.
+          </p>
+        </div>
+      </div>
+      <div style="display: flex">
+        <div class="menu_zakuski">
+          <p class="names">Гадо-Гадо</p>
+          <div class="zakuski_photo">
+            <img src="img блюда/гадо-гадо.jpeg" class="photo_eda" />
+            <div class="description">
+              <div>&nbsp;</div>
+              <p class="cost">Цена: 4.30$</p>
+              <div class="line"></div>
+              <div>&nbsp;</div>
+              <p class="cost">Размер порции</p>
+              <p class="cost" id="weight">Вес: 320г</p>
+              <div>&nbsp;</div>
+              <div class="line"></div>
+              <div>&nbsp;</div>
+            </div>
+          </div>
+          <p class="text_zakuski">
+            Этот экзотический индонезийский салат заправляется ароматным
+            арахисовым соусом, а как основу имеет сырые или варенные овощи
+            (капуста, салат, морковь, ростки фасоли), также - свежий жареный
+            тофу и вареные яйца. Подается он традиционно с рисовыми лепешками
+            или порцией обычного риса.
+          </p>
+        </div>
+      </div>
+      <div style="display: flex">
+        <div class="menu_zakuski">
+          <p class="names">Баксо</p>
+          <div class="zakuski_photo">
+            <img src="img блюда/баксо.jpeg" class="photo_eda" />
+            <div class="description">
+              <div>&nbsp;</div>
+              <p class="cost">Цена: 7.28$</p>
+              <div class="line"></div>
+              <div>&nbsp;</div>
+              <p class="cost">Размер порции</p>
+              <p class="cost" id="weight">Вес: 580г</p>
+              <div>&nbsp;</div>
+              <div class="line"></div>
+              <div>&nbsp;</div>
+            </div>
+          </div>
+          <p class="text_zakuski">
+            Баксо – это индонезийские мясные шарики, очень похожие на наши
+            фрикадельки. Они готовятся из говядины, однако, в некоторых местах
+            вы можете встретить это блюдо из рыбы, курицы или свинины. Мясные
+            шарики Баксо могут подаваться в самых разных вариациях – с пряным
+            бульоном, рисовой лапшой, овощами, реже – с тофу или традиционными
+            пельменями.
+          </p>
+        </div>
+      </div>
+      <div style="display: flex">
+        <div class="menu_zakuski">
+          <p class="names">Жаренный рис</p>
+          <div class="zakuski_photo">
+            <img src="img блюда/гадо-гадо.jpeg" class="photo_eda" />
+            <div class="description">
+              <div>&nbsp;</div>
+              <p class="cost">Цена: 3$</p>
+              <div class="line"></div>
+              <div>&nbsp;</div>
+              <p class="cost">Размер порции</p>
+              <p class="cost" id="weight">Вес: 300г</p>
+              <div>&nbsp;</div>
+              <div class="line"></div>
+              <div>&nbsp;</div>
+            </div>
+          </div>
+          <p class="text_zakuski">
+            Мы привыкли, что рис должен быть отварным, но индонезийцы нашли еще
+            один вариант его приготовления. Местный Жареный Рис - это
+            универсальное блюдо, которое можно найти в любом гастрономическом
+            месте - от роскошных отелей до кибиток с уличной едой. Рис в прямом
+            смысле обжаривается на сковородке, в процессе чего, может
+            добавляться все что угодно: яйца, курица, морепродукты, овощи,
+            колбаса, фрикадельки, говядина или козье мясо. Сервировка блюда
+            обычно состоит из акара, порезанного маринованного огурца, чили,
+            лука-шалота и моркови.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="foot_container">
+        <div class="container1">
+          <p>Адрес: Бали, Индонезия</p>
+          <br />
+          <p>Режим работы: круглосуточно</p>
+          <br />
+          <p>Телефон: +(62-21) 522-29-12</p>
+        </div>
+        <div class="container2">
+          <h4>Подписывайтесь на нас!</h4>
+          <br />
+          <ul class="podpiski">
+            <li>
+              <a href="#"><img src="./img/инст.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/facebook.svg" alt="" srcset="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/vk.svg" alt="" srcset="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/ok.svg" alt="" srcset="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

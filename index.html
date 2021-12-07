@@ -13,7 +13,7 @@
   <body>
     <header>
       <div class="head_container">
-        <img src="пример лого тест.png" alt="" id="logo" />
+        <img src="./img/logo.png" alt="" id="logo" />
         <nav id="nav_bar">
           <ul>
             <li><a href="index.html">Главная</a></li>
@@ -28,43 +28,69 @@
     <main>
       <div id="first_block">
         <div class="inner_text">
-          <h1>Текст</h1>
-          <h2>
-            текст текст текст текст текст текст текст текст текст текст текст
-            текст текст текст текст
+          <h1 class="inner_text_hello">Добро пожаловать в Paradise!</h1>
+          <h2 class="inner_text_hello_txt">
+            У нас отменные ингридиенты для вашего коктейля
           </h2>
         </div>
       </div>
       <div id="second_block">
         <div class="inner_text">
-          <h1>Текст</h1>
-          <h2>
-            текст текст текст текст текст текст текст текст текст текст текст
-            текст текст текст текст
+          <h1 class="inner_text_who">Кто мы такие?</h1>
+          <h2 class="inner_text_who_txt">
+            Мы - небольшой, независимый бар на фантастическом острове,
+            предлагающий комфортную атмосферу, превосходные напитки и
+            обслуживание. Мы предлагаем широкий выбор всеми любимых коктейлей.
           </h2>
           <br /><br /><br /><br /><br /><br /><br /><br /><br />
-          <button class="morebtn">Подробнее</button>
+          <div class="morebtn"><a href="About.html">О нас &minus;&gt;</a></div>
         </div>
       </div>
       <div id="third_block">
         <div id="menu_bar">
-          <h2>Текст</h2>
+          <h2>Меню</h2>
           <div id="menu_bar_container">
-            <div class="menu_bar_item"></div>
-            <div class="menu_bar_item"></div>
-            <div class="menu_bar_item"></div>
+            <div class="menu_bar_item">
+              <div class="menu_bar_item_text">Коктейли</div>
+            </div>
+            <div class="menu_bar_item">
+              <div class="menu_bar_item_text">Десерты</div>
+            </div>
+            <div class="menu_bar_item">
+              <div class="menu_bar_item_text">Закуски</div>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <h4>Подписывайтесь на нас!</h4>
-      <ul class="podpiski">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">VK</a></li>
-        <li><a href="#">OK</a></li>
-      </ul>
+      <div id="foot_container">
+        <div class="container1">
+          <p>Адрес: Бали, Индонезия</p>
+          <br />
+          <p>Режим работы: круглосуточно</p>
+          <br />
+          <p>Телефон: +(62-21) 522-29-12</p>
+        </div>
+        <div class="container2">
+          <h4>Подписывайтесь на нас!</h4>
+          <br />
+          <ul class="podpiski">
+            <li>
+              <a href="#"><img src="./img/инст.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/facebook.svg" alt="" srcset="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/vk.svg" alt="" srcset="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/ok.svg" alt="" srcset="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
