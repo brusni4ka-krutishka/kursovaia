@@ -1,11 +1,11 @@
-document.getElementById("head").innerHTML = `<meta charset="UTF-8" />
+document.getElementById('head').innerHTML = `<meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Коктейль-бар</title>`;
 
-document.getElementById("header").innerHTML = `<div class="head_container">
+document.getElementById('header').innerHTML = `<div class="head_container">
         <img src="./img/logo.png" alt="" id="logo" />
         <nav id="nav_bar">
           <ul>
@@ -18,7 +18,7 @@ document.getElementById("header").innerHTML = `<div class="head_container">
         </nav>
       </div>`;
 
-document.getElementById("footer").innerHTML = `<div id="foot_container">
+document.getElementById('footer').innerHTML = `<div id="foot_container">
         <div class="container1">
           <p>Адрес: Бали, Индонезия</p>
           <br />
@@ -32,22 +32,22 @@ document.getElementById("footer").innerHTML = `<div id="foot_container">
           <ul class="podpiski">
             <li>
               <a href="#">
-                <img src="./img/инст.svg" alt="" />
+                <img src="../img/инст.svg" alt="" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./img/facebook.svg" alt="" srcset="" />
+                <img src="../img/facebook.svg" alt="" srcset="" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./img/vk.svg" alt="" srcset="" />
+                <img src="../img/vk.svg" alt="" srcset="" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./img/ok.svg" alt="" srcset="" />
+                <img src="../img/ok.svg" alt="" srcset="" />
               </a>
             </li>
           </ul>
