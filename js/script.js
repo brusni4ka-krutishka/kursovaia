@@ -53,3 +53,13 @@ document.getElementById('footer').innerHTML = `<div id="foot_container">
           </ul>
         </div>
       </div>`;
+
+// async function getResponse() {
+//   let response = await fetch('cocktails.json');
+//   let content = await response.json();
+//   content = content.splice(0, 10);
+//   for (key in content) {
+//     console.log(content[key]);
+//   }
+// }
+// getResponse();
