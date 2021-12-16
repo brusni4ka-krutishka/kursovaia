@@ -54,12 +54,14 @@ document.getElementById('footer').innerHTML = `<div id="foot_container">
         </div>
       </div>`;
 
-// async function getResponse() {
-//   let response = await fetch('cocktails.json');
-//   let content = await response.json();
-//   content = content.splice(0, 10);
-//   for (key in content) {
-//     console.log(content[key]);
-//   }
-// }
-// getResponse();
+async function getResponse() {
+  let response = await fetch(
+    'https://github.com/brusni4ka-krutishka/kursovaia/blob/magister/js/cocktails.json'
+  );
+  let content = await response.json();
+  content = content.splice(0, 10);
+  for (key in content) {
+    console.log(content[key]);
+  }
+}
+getResponse();
