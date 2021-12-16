@@ -47,7 +47,7 @@ document.getElementById('footer').innerHTML = `<div id="foot_container">
             </li>
             <li>
               <a href="#">
-                <img src="../img/ok.svg" alt="" srcset="" />
+                <img src="./img/ok.svg" alt="" srcset="" />
               </a>
             </li>
           </ul>
