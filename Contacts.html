@@ -3,6 +3,8 @@
   <head id="head"> </head>
   <body>
     <header id="header"></header>
+    <script src="./js/header.js"></script>
+
     <main>
       <div class="containt">
         <div id="a"></div>
@@ -26,7 +28,7 @@
       function initMap() {
         const uluru = { lat: -8.8291958, lng: 115.2167318 };
 
-        const map = new google.maps.Map(document.getElementById("a"), {
+        const map = new google.maps.Map(document.getElementById('a'), {
           zoom: 15,
           center: uluru,
         });
@@ -43,6 +45,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT5laHMJCZa6kKqXfkwiDeaZwJaj3OwIc&callback=initMap&libraries=&v=weekly"
       async
     ></script>
+    <script src="./js/footer.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

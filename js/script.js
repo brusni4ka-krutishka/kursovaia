@@ -1,66 +1,46 @@
-document.getElementById('head').innerHTML = `<meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Коктейль-бар</title>`;
+function getResponse() {
+  let page = window.location.pathname.split('/').pop();
 
-document.getElementById('header').innerHTML = `<div class="head_container">
-        <img src="./img/logo.png" alt="" id="logo" />
-        <nav id="nav_bar">
-          <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="menu.html">Меню</a></li>
-            <li><a href="About.html">О нас</a></li>
-            <li><a href="Contacts.html">Контакты</a></li>
-            <li><a href="Search.html">Поиск</a></li>
-          </ul>
-        </nav>
-      </div>`;
+  switch (page) {
+    case 'koktail.html':
+      koktails();
+  }
 
-document.getElementById('footer').innerHTML = `<div id="foot_container">
-        <div class="container1">
-          <p>Адрес: Бали, Индонезия</p>
-          <br />
-          <p>Режим работы: круглосуточно</p>
-          <br />
-          <p>Телефон: +(62-21) 522-29-12</p>
-        </div>
-        <div class="container2">
-          <h4>Подписывайтесь на нас!</h4>
-          <br />
-          <ul class="podpiski">
-            <li>
-              <a href="#">
-                <img src="../img/инст.svg" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="../img/facebook.svg" alt="" srcset="" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="../img/vk.svg" alt="" srcset="" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="../img/ok.svg" alt="" srcset="" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>`;
-async function getResponse() {
-  let response = await fetch(
-    'https://github.com/brusni4ka-krutishka/kursovaia/blob/magister/js/cocktails.json'
-  );
-  let content = await response.json();
-  content = content.splice(0, 10);
-  for (key in content) {
-    console.log(content[key]);
+  async function koktails() {
+    let response = await fetch(`https://api.npoint.io/1316454332ee5e08f86d`);
+    let content = await response.json();
+    main(content);
   }
 }
 getResponse();
+
+function main(jsonresp) {
+  jsonresp.map((item) => {
+    document.getElementById('main').innerHTML += `
+     <div class="menu_main">
+     <div class="menu_zakuski">
+          <p class="names">${item.name}</p>
+          <div class="zakuski_photo">
+            <img src="${item.imgsrc}" class="koktail_eda" />
+            <div class="description">
+              <div>&nbsp;</div>
+              <p class="cost">Цена: ${item.cost}</p>
+              <div class="line"></div>
+              <div>&nbsp;</div>
+              <p class="cost">Размер порции</p>
+              <p class="cost" id="weight">Вес: 320г</p>
+              <div>&nbsp;</div>
+              <div class="line"></div>
+              <div>&nbsp;</div>
+            </div>
+          </div>
+          <p class="text_zakuski">
+            ${item.description}
+          </p>
+        </div>
+      </div>      
+      </div>
+
+    `;
+  });
+}
