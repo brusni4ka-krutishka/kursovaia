@@ -12,22 +12,22 @@ document.getElementById('footer').innerHTML = `<div id="foot_container">
           <ul class="podpiski">
             <li>
               <a href="#">
-                <img src="./img/инст.svg" alt="" />
+                <img src="icons/inst.svg" alt="1" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./img/facebook.svg" alt="" srcset="" />
+                <img src="icons/facebook.svg" alt="2"  />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./img/vk.svg" alt="" srcset="" />
+                <img src="icons/vk.svg" alt="3"  />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./img/ok.svg" alt="" srcset="" />
+                <img src="icons/ok.svg" alt="4"  />
               </a>
             </li>
           </ul>
