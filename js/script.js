@@ -4,14 +4,24 @@ function getResponse() {
   switch (page) {
     case 'koktail.html':
       koktails();
+      break;
     case 'zakuski.html':
       meal();
+      break;
+    case 'desert.html':
+      deserts();
+      break;
   }
 
   async function koktails() {
     let response = await fetch(`https://api.npoint.io/1316454332ee5e08f86d`);
     let content = await response.json();
     Addcocktails(content);
+  }
+  async function deserts() {
+    let response = await fetch(`https://api.npoint.io/cd8bc0116679705d3efa`);
+    let content = await response.json();
+    Addmeal(content);
   }
 
   async function meal() {
@@ -36,7 +46,7 @@ function Addcocktails(jsonresp) {
               <div class="line"></div>
               <div>&nbsp;</div>
               <p class="cost">Размер порции</p>
-              <p class="cost" id="weight">Вес: ${item.weight}}</p>
+              <p class="cost" id="weight">Вес: ${item.weight}</p>
               <div>&nbsp;</div>
               <div class="line"></div>
               <div>&nbsp;</div>
