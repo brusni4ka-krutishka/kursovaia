@@ -22,7 +22,7 @@ document.getElementById('footer').innerHTML = `<div id="foot_container">
             </li>
             <li>
               <a href="#">
-                <img src="icons/vk.png" alt="3"  />
+                <img src="./img/vk.png" alt="3"  />
               </a>
             </li>
             <li>
