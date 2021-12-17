@@ -27,7 +27,7 @@ document.getElementById('footer').innerHTML = `<div id="foot_container">
             </li>
             <li>
               <a href="#">
-                <img src="./img/facebook.svg" alt="4"  />
+                <img src="./img/facebook.png" alt="4"  />
               </a>
             </li>
           </ul>
