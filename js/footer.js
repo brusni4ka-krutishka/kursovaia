@@ -12,7 +12,7 @@ document.getElementById('footer').innerHTML = `<div id="foot_container">
           <ul class="podpiski">
             <li>
               <a href="#">
-                <img src="./img/inst.svg" alt="1" />
+                <img src="./img/inst.png" alt="1" />
               </a>
             </li>
             <li>
