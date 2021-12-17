@@ -4,17 +4,25 @@ function getResponse() {
   switch (page) {
     case 'koktail.html':
       koktails();
+    case 'zakuski.html':
+      meal();
   }
 
   async function koktails() {
     let response = await fetch(`https://api.npoint.io/1316454332ee5e08f86d`);
     let content = await response.json();
-    main(content);
+    Addcocktails(content);
+  }
+
+  async function meal() {
+    let response = await fetch(`https://api.npoint.io/2d7924c95f8fdc00376d`);
+    let content = await response.json();
+    Addmeal(content);
   }
 }
 getResponse();
 
-function main(jsonresp) {
+function Addcocktails(jsonresp) {
   jsonresp.map((item) => {
     document.getElementById('main').innerHTML += `
      <div class="menu_main">
@@ -28,7 +36,7 @@ function main(jsonresp) {
               <div class="line"></div>
               <div>&nbsp;</div>
               <p class="cost">Размер порции</p>
-              <p class="cost" id="weight">Вес: 320г</p>
+              <p class="cost" id="weight">Вес: ${item.weight}}</p>
               <div>&nbsp;</div>
               <div class="line"></div>
               <div>&nbsp;</div>
@@ -39,6 +47,34 @@ function main(jsonresp) {
           </p>
         </div>
       </div>      
+      </div>
+
+    `;
+  });
+}
+
+function Addmeal(jsonresp) {
+  jsonresp.map((item) => {
+    document.getElementById('main').innerHTML += `
+     <div class="menu_zakuski">
+        <p class="names">${item.name}</p>
+        <div class="zakuski_photo">
+          <img src="${item.imgsrc}" class="photo_eda" />
+          <div class="description">
+            <div>&nbsp;</div>
+            <p class="cost">Цена: ${item.cost}</p>
+            <div class="line"></div>
+            <div>&nbsp;</div>
+            <p class="cost">Размер порции</p>
+            <p class="cost" id="weight">Вес: ${item.weight}</p>
+            <div>&nbsp;</div>
+            <div class="line"></div>
+            <div>&nbsp;</div>
+          </div>
+        </div>
+        <p class="text_zakuski">
+          ${item.description}
+        </p>
       </div>
 
     `;
