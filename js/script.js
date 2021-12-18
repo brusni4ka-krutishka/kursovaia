@@ -3,31 +3,20 @@ function getResponse() {
 
   switch (page) {
     case 'koktail.html':
-      koktails();
+      request(`https://api.npoint.io/1316454332ee5e08f86d`, 1);
       break;
     case 'zakuski.html':
-      meal();
+      request(`https://api.npoint.io/2d7924c95f8fdc00376d`, 2);
       break;
     case 'desert.html':
-      deserts();
+      request(`https://api.npoint.io/cd8bc0116679705d3efa`, 2);
       break;
   }
 
-  async function koktails() {
-    let response = await fetch(`https://api.npoint.io/1316454332ee5e08f86d`);
+  async function request(ref, num) {
+    let response = await fetch(ref);
     let content = await response.json();
-    Addcocktails(content);
-  }
-  async function deserts() {
-    let response = await fetch(`https://api.npoint.io/cd8bc0116679705d3efa`);
-    let content = await response.json();
-    Addmeal(content);
-  }
-
-  async function meal() {
-    let response = await fetch(`https://api.npoint.io/2d7924c95f8fdc00376d`);
-    let content = await response.json();
-    Addmeal(content);
+    num === 1 ? Addcocktails(content) : Addmeal(content);
   }
 }
 getResponse();

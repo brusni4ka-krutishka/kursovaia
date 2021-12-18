@@ -171,6 +171,10 @@ header {
   height: 100%;
 }
 
+.menu_button:hover {
+  background: rgb(222, 220, 220);
+  box-shadow: 3px 3px 3px rgb(82, 78, 78);
+}
 .menu_button {
   width: 20%;
   margin-top: 15%;
@@ -179,6 +183,8 @@ header {
   background-color: white;
   border: 1px solid black;
   border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.3s;
 }
 
 .menu1kategoria {
