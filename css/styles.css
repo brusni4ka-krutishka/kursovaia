@@ -118,6 +118,7 @@ header {
 	border: 2mm ridge rgb(255, 255, 255);
 	width: fit-content;
 	padding: 10px;
+	-webkit-text-stroke: 2px black;
 }
 
 #menu_bar_container {
@@ -154,6 +155,7 @@ header {
 	margin-top: 300px;
 	color: white;
 	font-size: 40px;
+	font-weight: bolder;
 }
 
 .eat {
