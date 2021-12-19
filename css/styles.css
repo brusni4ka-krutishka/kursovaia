@@ -67,29 +67,27 @@ header {
 	font-size: 90px;
 	font-weight: bolder;
 	text-align: center;
-
-	text-shadow: #000000 0 0 10px; /* Свечение */
 }
 .inner_text_hello_txt {
 	color: white;
 	font-weight: bolder;
 	font-size: 60px;
 	margin-top: 100px;
-	text-shadow: #000000 0 0 10px;
 }
 .inner_text_who {
 	color: aliceblue;
+	margin-left: -230px;
 	text-align: left;
 	font-style: normal;
-	font-size: 80px;
+	font-size: 100px;
 	font-weight: bolder;
 	text-shadow: #000000 0 0 10px;
 }
 .inner_text_who_txt {
 	margin-top: 70px;
-	margin-left: -300px;
+	margin-left: -290px;
+	margin-right: 100px;
 	font-size: 50px;
-	text-shadow: #000000 0 0 10px;
 	text-align: start;
 }
 #second_block {
