@@ -40,6 +40,12 @@ header {
 }
 #nav_bar ul li {
 	min-width: 50px;
+	border: 2px solid transparent;
+	transition: 0.3s;
+}
+#nav_bar ul li:hover {
+	border-bottom: 2px solid gray;
+	font-size: 15pt;
 }
 
 #first_block {
@@ -80,7 +86,6 @@ header {
 .inner_text_who {
 	color: aliceblue;
 	text-align: left;
-	margin-left: -300px;
 	font-style: normal;
 	font-size: 80px;
 	font-weight: bolder;
@@ -89,9 +94,8 @@ header {
 .inner_text_who_txt {
 	margin-top: 70px;
 	margin-left: -300px;
-	margin-right: 150px;
 	font-size: 50px;
-
+	text-shadow: #000000 0 0 10px;
 	text-align: start;
 }
 #second_block {
