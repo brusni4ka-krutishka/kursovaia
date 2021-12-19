@@ -64,21 +64,33 @@ header {
 }
 .inner_text_hello {
 	color: white;
-	font-size: 70px;
+	font-size: 90px;
+	font-weight: bolder;
 	text-align: center;
+
+	text-shadow: #000000 0 0 10px; /* Свечение */
 }
 .inner_text_hello_txt {
 	color: white;
-	font-size: 40px;
+	font-weight: bolder;
+	font-size: 60px;
 	margin-top: 100px;
+	text-shadow: #000000 0 0 10px;
 }
 .inner_text_who {
-	margin-left: 20px;
-	font-size: 40px;
+	color: aliceblue;
+	text-align: left;
+	font-style: normal;
+	font-size: 80px;
+	font-weight: bolder;
+	text-shadow: #000000 0 0 10px;
 }
 .inner_text_who_txt {
 	margin-top: 70px;
-	font-size: 36px;
+	margin-left: -300px;
+	font-size: 50px;
+	text-shadow: #000000 0 0 10px;
+	text-align: start;
 }
 #second_block {
 	width: 100%;
@@ -99,6 +111,7 @@ header {
 	width: 100%;
 	height: 800px;
 	background-image: url("../img/главная2.jpeg");
+
 	background-size: 100% 100%;
 }
 
@@ -111,14 +124,14 @@ header {
 }
 
 #menu_bar h2 {
-	text-align: left;
-	font-size: 70px;
-	margin-left: -100px;
-	color: aliceblue;
-	border: 2mm ridge rgb(255, 255, 255);
+	text-align: center;
+	font-size: 90px;
+	font-weight: bolder;
+	margin-left: 500px;
+	color: white;
+	text-shadow: #000000 0 0 10px;
+
 	width: fit-content;
-	padding: 10px;
-	-webkit-text-stroke: 2px black;
 }
 
 #menu_bar_container {
@@ -134,8 +147,12 @@ header {
 	width: 300px;
 	height: 375px;
 	background-image: url("../img десерты/теранг бу.jpeg");
-	background-size: cover;
 	border-radius: 10%;
+	display: inline-block; /* Строчно-блочный элемент */
+	overflow: hidden;
+	transition: 1s; /* Время эффекта */
+	display: block;
+	transform: scale(1.2);
 }
 .menu_bar_item:nth-child(2) {
 	width: 300px;
