@@ -162,6 +162,7 @@ header {
 .abob {
   overflow: hidden;
   border-radius: 10%;
+  box-shadow: 5px 5px 100px;
 }
 .abob:nth-child(1) .menu_bar_item {
   width: 300px;
