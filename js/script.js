@@ -24,7 +24,7 @@ getResponse();
 function Addcocktails(jsonresp) {
   jsonresp.map((item) => {
     document.getElementById('main').innerHTML += `
-     <div class="menu_main">
+     <div class="menu_cocktails">
      <div class="menu_zakuski">
           <p class="names">${item.name}</p>
           <div class="zakuski_photo">

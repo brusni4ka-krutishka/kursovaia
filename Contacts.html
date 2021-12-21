@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head id="head"> </head>
-	<body>
-		<header id="header"></header>
-		<script src="./js/header.js"></script>
+  <head id="head"> </head>
+  <body>
+    <header id="header"></header>
+    <script src="./js/header.js"></script>
+    <div id="crumbs">
+      <a href="index.html" class="crumbs_block">Главная</a>
+      <a href="Contacts.html" class="crumbs_block">Контакты</a>
+    </div>
+    <main>
+      <div class="containt">
+        <div id="a"></div>
+        <div id="b">
+          <h2 style="font-style: 700; font-size: 28pt">Наш адрес:</h2>
+          <br />
+          <p>Бали, Индонезия</p>
+          <br />
+          <h2 style="font-style: 700; font-size: 26pt">Время работы:</h2>
+          <br />
+          <p>Круглосуточно</p>
+          <br />
+          <h2 style="font-style: 700; font-size: 28pt">+(62-21) 522-29-12</h2>
+          <br />
+          <h2 style="font-style: 700; font-size: 28pt">+(62-21) 496-29-12</h2>
+        </div>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+    <script>
+      function initMap() {
+        const uluru = { lat: -8.8291958, lng: 115.2167318 };
 
-		<main>
-			<div class="containt">
-				<div id="a"></div>
-				<div id="b">
-					<h2 style="font-style: 700; font-size: 28pt">Наш адрес:</h2>
-					<br />
-					<p>Бали, Индонезия</p>
-					<br />
-					<h2 style="font-style: 700; font-size: 26pt">
-						Время работы:
-					</h2>
-					<br />
-					<p>Круглосуточно</p>
-					<br />
-					<h2 style="font-style: 700; font-size: 28pt">
-						+(62-21) 522-29-12
-					</h2>
-					<br />
-					<h2 style="font-style: 700; font-size: 28pt">
-						+(62-21) 496-29-12
-					</h2>
-				</div>
-			</div>
-		</main>
-		<footer id="footer"></footer>
-		<script>
-			function initMap() {
-				const uluru = { lat: -8.8291958, lng: 115.2167318 };
+        const map = new google.maps.Map(document.getElementById('a'), {
+          zoom: 15,
+          center: uluru,
+        });
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
 
-				const map = new google.maps.Map(document.getElementById("a"), {
-					zoom: 15,
-					center: uluru,
-				});
-				const marker = new google.maps.Marker({
-					position: uluru,
-					map: map,
-				});
-			}
-		</script>
-
-		<script
-			async
-			defer
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT5laHMJCZa6kKqXfkwiDeaZwJaj3OwIc&callback=initMap&libraries=&v=weekly"
-			async
-		></script>
-		<script src="./js/footer.js"></script>
-		<script src="./js/script.js"></script>
-	</body>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT5laHMJCZa6kKqXfkwiDeaZwJaj3OwIc&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

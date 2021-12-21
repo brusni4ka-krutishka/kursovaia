@@ -4,17 +4,16 @@ document.getElementById('head').innerHTML = `<meta charset="UTF-8" />
     <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="./css/reset.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Коктейль-бар</title>`;
+    <title>Paradise</title>`;
 
 document.getElementById('header').innerHTML = `<div class="head_container">
-        <img src="./img/logo.png" alt="" id="logo" />
+       <a href="index.html"> <img src="./img/logo.png" alt="" id="logo" /></a>
         <nav id="nav_bar">
           <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="menu.html">Меню</a></li>
             <li><a href="About.html">О нас</a></li>
             <li><a href="Contacts.html">Контакты</a></li>
-            <li><a href="Search.html">Поиск</a></li>
           </ul>
         </nav>
       </div>`;
