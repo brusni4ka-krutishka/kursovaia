@@ -179,12 +179,14 @@ header {
   border-radius: 10%;
   background-size: cover;
 }
+
 .menu_bar_item_text {
   padding-top: 300px;
   color: white;
   font-size: 40px;
   font-weight: bolder;
 }
+/* MENU.html */
 
 .eat {
   margin-top: 10%;
@@ -201,69 +203,52 @@ header {
 }
 
 .menu_main {
-  display: flex;
+  padding-top: 150px;
+  /* display: flex; */
   height: 100%;
+  width: 100%;
+  /* flex-flow: row wrap; */
 }
-
-.menu_button:hover {
-  background: rgb(222, 220, 220);
-  box-shadow: 3px 3px 3px rgb(82, 78, 78);
+.menu_group {
+  display: flex;
+  flex-flow: row wrap;
+}
+.menu_group:nth-child(2) img {
+  order: 2;
+}
+.menu_img,
+.menu_about {
+  width: 50%;
+  text-align: center;
+}
+.menu_name {
+  padding-top: 10%;
+  font-size: 36pt;
+  font-weight: bold;
+}
+.menu_text {
+  font-size: 28pt;
+  width: 70%;
+  padding-top: 1%;
+  margin: auto;
+}
+.menu_button_container {
+  margin-top: 20%;
 }
 .menu_button {
-  width: 20%;
-  margin-top: 15%;
-  margin-left: 40%;
-  height: 45px;
+  padding: 2%;
   background-color: white;
   border: 1px solid black;
   border-radius: 20px;
   cursor: pointer;
   transition-duration: 0.3s;
 }
-
-.menu1kategoria {
-  align-items: center;
-  margin-top: 150px;
-  background: url('../img блюда/наси удук.jpeg') no-repeat;
-  background-size: 100% 650px;
-  width: 50%;
-  height: 650px;
+.menu_button:hover {
+  background: rgb(222, 220, 220);
+  box-shadow: 3px 3px 3px rgb(82, 78, 78);
 }
 
-.text_menu1kategoria {
-  margin-top: 150px;
-  background: white;
-  width: 50%;
-  height: 650px;
-}
-
-.menu2kategoria {
-  align-items: center;
-  background: url('../img/зонт.jpeg') no-repeat;
-  background-size: 100% 650px;
-  width: 50%;
-  height: 650px;
-}
-
-.text_menu2kategoria {
-  background: white;
-  width: 50%;
-  height: 650px;
-}
-
-.menu3kategoria {
-  align-items: center;
-  background: url('../img десерты/колак.jpeg') no-repeat;
-  background-size: 100% 650px;
-  width: 50%;
-  height: 650px;
-}
-
-.text_menu3kategoria {
-  background: white;
-  width: 50%;
-  height: 650px;
-}
+/* MENU.html */
 
 .names {
   margin-top: 30px;
