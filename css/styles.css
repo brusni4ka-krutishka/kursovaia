@@ -56,7 +56,7 @@ header {
   height: 800px;
   width: 100%;
   background-image: url('../img/главная1.jpeg');
-  background-size: 100%;
+  background-size: cover;
 }
 
 #glavnaia1kartinka {
@@ -105,7 +105,7 @@ header {
   width: 100%;
   height: 800px;
   background-image: url('../img/рррр.jpeg');
-  background-size: 100%;
+  background-size: cover;
 }
 
 .morebtn {
@@ -124,7 +124,7 @@ header {
   width: 100%;
   height: 800px;
   background-image: url('../img/главная2.jpeg');
-  background-size: 100% 100%;
+  background-size: cover;
 }
 #third_block a {
   color: white;
@@ -218,13 +218,13 @@ header {
   height: 70px;
   border-bottom: 1px solid black;
   align-items: center;
-  gap: 50px;
   font-size: 22pt;
 }
 .crumbs_block {
+  width: 100px;
   border-right: 1px solid black;
   height: 70%;
-  padding-right: 30px;
+  padding: 0 30px;
   display: flex;
   align-items: center;
 }

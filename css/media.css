@@ -1,0 +1,59 @@
+@media screen and (max-width: 1690px) {
+  .menu_text {
+    font-size: 20pt;
+    padding-top: 4%;
+  }
+}
+@media screen and (max-width: 1475px) {
+}
+
+@media screen and (max-width: 1400px) {
+  .inner_text_who_txt {
+    margin-left: -170px;
+    font-size: 34px;
+  }
+
+  .inner_text_hello {
+    font-size: 55pt;
+  }
+  .inner_text_hello_txt {
+    font-size: 40pt;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  #menu_bar {
+    width: 95%;
+  }
+  .inner_text_who {
+    font-size: 60px;
+  }
+
+  .menu_name {
+    font-size: 27pt;
+  }
+  .menu_text {
+    font-size: 17pt;
+    width: 90%;
+  }
+  .menu_button {
+    font-size: 13pt;
+  }
+
+  .abob:nth-child(1) .menu_bar_item,
+  .abob:nth-child(2) .menu_bar_item,
+  .abob:nth-child(3) .menu_bar_item {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .menu_name {
+    padding-top: 3%;
+  }
+  .zakuski_photo {
+    margin: 0;
+  }
+  .cost {
+    font-size: 45px;
+  }
+}
