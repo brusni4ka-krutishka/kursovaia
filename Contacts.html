@@ -1,59 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="reset.css" />
-    <!-- reset для сброса стандартных стилей -->
-    <script src="script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Коктейль-бар</title>
-  </head>
+  <head id="head"> </head>
   <body>
-    <header>
-      <div class="head_container">
-        <img src="./img/logo.png" alt="" id="logo" />
-        <nav id="nav_bar">
-          <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="menu.html">Меню</a></li>
-            <li><a href="About.html">О нас</a></li>
-            <li><a href="Contacts.html">Контакты</a></li>
-            <li><a href="Search.html">Поиск</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main></main>
-    <footer>
-      <div id="foot_container">
-        <div class="container1">
-          <p>Адрес: Бали, Индонезия</p>
+    <header id="header"></header>
+    <script src="./js/header.js"></script>
+    <div id="crumbs">
+      <a href="index.html" class="crumbs_block">Главная</a>
+      <a href="Contacts.html" class="crumbs_block">Контакты</a>
+    </div>
+    <main>
+      <div class="containt">
+        <div id="a"></div>
+        <div id="b">
+          <h2 style="font-style: 700; font-size: 28pt">Наш адрес:</h2>
           <br />
-          <p>Режим работы: круглосуточно</p>
+          <p>Бали, Индонезия</p>
           <br />
-          <p>Телефон: +(62-21) 522-29-12</p>
-        </div>
-        <div class="container2">
-          <h4>Подписывайтесь на нас!</h4>
+          <h2 style="font-style: 700; font-size: 26pt">Время работы:</h2>
           <br />
-          <ul class="podpiski">
-            <li>
-              <a href="#"><img src="./img/инст.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/facebook.svg" alt="" srcset="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/vk.svg" alt="" srcset="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/ok.svg" alt="" srcset="" /></a>
-            </li>
-          </ul>
+          <p>Круглосуточно</p>
+          <br />
+          <h2 style="font-style: 700; font-size: 28pt">+(62-21) 522-29-12</h2>
+          <br />
+          <h2 style="font-style: 700; font-size: 28pt">+(62-21) 496-29-12</h2>
         </div>
       </div>
-    </footer>
+    </main>
+    <footer id="footer"></footer>
+    <script>
+      function initMap() {
+        const uluru = { lat: -8.8291958, lng: 115.2167318 };
+
+        const map = new google.maps.Map(document.getElementById('a'), {
+          zoom: 15,
+          center: uluru,
+        });
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT5laHMJCZa6kKqXfkwiDeaZwJaj3OwIc&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

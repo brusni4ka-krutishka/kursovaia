@@ -1,0 +1,102 @@
+@media screen and (max-width: 1690px) {
+  .menu_text {
+    font-size: 20pt;
+    padding-top: 4%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .inner_text_who_txt {
+    margin-left: -170px;
+    font-size: 34px;
+  }
+
+  .inner_text_hello {
+    font-size: 55pt;
+  }
+  .inner_text_hello_txt {
+    font-size: 40pt;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  #menu_bar {
+    width: 95%;
+  }
+  .inner_text_who {
+    font-size: 60px;
+  }
+
+  .menu_name {
+    font-size: 27pt;
+  }
+  .menu_text {
+    font-size: 17pt;
+    width: 90%;
+  }
+  .menu_button {
+    font-size: 13pt;
+  }
+
+  .abob:nth-child(1) .menu_bar_item,
+  .abob:nth-child(2) .menu_bar_item,
+  .abob:nth-child(3) .menu_bar_item {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .menu_name {
+    padding-top: 3%;
+  }
+  .zakuski_photo {
+    margin: 15px 0 0 0;
+  }
+  .cost {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 875px) {
+  .menu_text {
+    font-size: 14pt;
+    padding-top: 3%;
+  }
+  .menu_name {
+    font-size: 23pt;
+  }
+}
+
+@media screen and (max-width: 732px) {
+  .menu_img,
+  .menu_about {
+    min-width: 364px;
+    width: 100%;
+  }
+  .menu_group:nth-child(2) img {
+    order: 0;
+  }
+  .menu_group {
+    margin-bottom: 7%;
+  }
+
+  @media screen and (max-width: 650px) {
+    #crumbs {
+      font-size: 18pt;
+    }
+    .container1 {
+      min-width: 275px;
+      margin-bottom: 3%;
+      text-align: center;
+    }
+    #foot_container {
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    .crumbs_block {
+      padding: 0 15px;
+    }
+    .menu_img,
+    .menu_about {
+      min-width: 0;
+    }
+  }
+}

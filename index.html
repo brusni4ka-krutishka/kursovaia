@@ -1,36 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="reset.css" />
-    <!-- reset для сброса стандартных стилей -->
-    <script src="script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Коктейль-бар</title>
-  </head>
+  <head id="head"> </head>
   <body>
-    <header>
-      <div class="head_container">
-        <img src="./img/logo.png" alt="" id="logo" />
-        <nav id="nav_bar">
-          <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="menu.html">Меню</a></li>
-            <li><a href="About.html">О нас</a></li>
-            <li><a href="Contacts.html">Контакты</a></li>
-            <li><a href="Search.html">Поиск</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <header id="header"></header>
+    <script src="./js/header.js"></script>
+
     <main>
       <div id="first_block">
         <div class="inner_text">
           <h1 class="inner_text_hello">Добро пожаловать в Paradise!</h1>
           <h2 class="inner_text_hello_txt">
-            У нас отменные ингридиенты для вашего коктейля
+            У нас отменные ингредиенты для вашего коктейля
           </h2>
         </div>
       </div>
@@ -43,54 +23,44 @@
             обслуживание. Мы предлагаем широкий выбор всеми любимых коктейлей.
           </h2>
           <br /><br /><br /><br /><br /><br /><br /><br /><br />
-          <div class="morebtn"><a href="About.html">О нас &minus;&gt;</a></div>
+          <div class="morebtn">
+            <a href="About.html">О нас &#8594;</a>
+          </div>
         </div>
       </div>
       <div id="third_block">
         <div id="menu_bar">
           <h2>Меню</h2>
           <div id="menu_bar_container">
-            <div class="menu_bar_item">
-              <div class="menu_bar_item_text">Коктейли</div>
+            <div class="abob">
+              <a href="desert.html">
+                <div class="menu_bar_item">
+                  <div class="menu_bar_item_text">Десерты</div>
+                </div>
+              </a>
             </div>
-            <div class="menu_bar_item">
-              <div class="menu_bar_item_text">Десерты</div>
+
+            <div class="abob">
+              <a href="zakuski.html">
+                <div class="menu_bar_item">
+                  <div class="menu_bar_item_text">Коктейли</div>
+                </div>
+              </a>
             </div>
-            <div class="menu_bar_item">
-              <div class="menu_bar_item_text">Закуски</div>
+
+            <div class="abob">
+              <a href="koktail.html">
+                <div class="menu_bar_item">
+                  <div class="menu_bar_item_text">Блюда</div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer>
-      <div id="foot_container">
-        <div class="container1">
-          <p>Адрес: Бали, Индонезия</p>
-          <br />
-          <p>Режим работы: круглосуточно</p>
-          <br />
-          <p>Телефон: +(62-21) 522-29-12</p>
-        </div>
-        <div class="container2">
-          <h4>Подписывайтесь на нас!</h4>
-          <br />
-          <ul class="podpiski">
-            <li>
-              <a href="#"><img src="./img/инст.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/facebook.svg" alt="" srcset="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/vk.svg" alt="" srcset="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/ok.svg" alt="" srcset="" /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    <footer id="footer"></footer>
+    <script src="./js/footer.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
