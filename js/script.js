@@ -22,8 +22,10 @@ function getResponse() {
 getResponse();
 
 function Addcocktails(jsonresp) {
-  jsonresp.map((item) => {
-    document.getElementById('main').innerHTML += `
+  jsonresp
+    .filter((item) => item.alcohol === 'strong')
+    .map((item) => {
+      document.getElementById('main').innerHTML += `
      <div class="menu_cocktails">
      <div class="menu_zakuski">
           <p class="names">${item.name}</p>
@@ -48,7 +50,7 @@ function Addcocktails(jsonresp) {
       </div>
 
     `;
-  });
+    });
 }
 
 function Addmeal(jsonresp) {
