@@ -36,6 +36,9 @@
   .menu_button {
     font-size: 13pt;
   }
+  #b {
+    text-align: center;
+  }
 
   .abob:nth-child(1) .menu_bar_item,
   .abob:nth-child(2) .menu_bar_item,
@@ -174,5 +177,10 @@
   }
   .menu_bar_item_text {
     padding-top: 230px;
+  }
+  #a {
+    min-width: 0;
+    width: 270px;
+    height: 310px;
   }
 }

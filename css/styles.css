@@ -380,23 +380,27 @@ header {
 .containt {
   font-size: 22pt;
   padding: 5% 0;
-  height: 500px;
   width: 80%;
   display: flex;
   margin: auto;
   gap: 3%;
   justify-content: center;
+  flex-flow: row wrap;
 }
 #a {
+  min-width: 500px;
   width: 500px;
   height: 500px;
 }
 
 #b {
+  margin-top: 2%;
   width: 500px;
-  height: 500px;
+  /* height: 500px; */
 }
-
+.phone_num {
+  font-size: 22pt;
+}
 #footer {
   border-top: 1px solid black;
 }
