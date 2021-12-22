@@ -34,8 +34,7 @@ function Addcocktails(jsonresp) {
               <p class="cost">Цена: ${item.cost}</p>
               <div class="line"></div>
               <div>&nbsp;</div>
-              <p class="cost">Размер порции</p>
-              <p class="cost" id="weight">Вес: ${item.weight}</p>
+              <p class="cost" id="weight">Объем: ${item.volume}</p>
               <div>&nbsp;</div>
               <div class="line"></div>
               <div>&nbsp;</div>
@@ -64,7 +63,6 @@ function Addmeal(jsonresp) {
             <p class="cost">Цена: ${item.cost}</p>
             <div class="line"></div>
             <div>&nbsp;</div>
-            <p class="cost">Размер порции</p>
             <p class="cost" id="weight">Вес: ${item.weight}</p>
             <div>&nbsp;</div>
             <div class="line"></div>

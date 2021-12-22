@@ -7,7 +7,6 @@
 
 @media screen and (max-width: 1400px) {
   .inner_text_who_txt {
-    margin-left: -170px;
     font-size: 34px;
   }
 
@@ -63,6 +62,31 @@
   .menu_name {
     font-size: 23pt;
   }
+  #menu_bar_container {
+    /* justify-content: center; */
+    max-width: 825px;
+    flex-flow: row wrap;
+  }
+  #first_block {
+    height: 550px;
+  }
+  #third_block {
+    height: auto;
+  }
+  .abob {
+    margin-bottom: 5%;
+    box-shadow: 5px -5px 30px;
+  }
+  .inner_text {
+    width: 65%;
+  }
+  .inner_text_hello {
+    font-size: 45pt;
+  }
+  .inner_text_hello_txt {
+    font-size: 30pt;
+    margin-top: 15%;
+  }
 }
 
 @media screen and (max-width: 732px) {
@@ -77,26 +101,66 @@
   .menu_group {
     margin-bottom: 7%;
   }
+}
+@media screen and (max-width: 650px) {
+  #crumbs {
+    font-size: 18pt;
+  }
+  .container1 {
+    min-width: 275px;
+    margin-bottom: 3%;
+    text-align: center;
+  }
+  #foot_container {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .crumbs_block {
+    padding: 0 15px;
+  }
+  .menu_img,
+  .menu_about {
+    min-width: 0;
+  }
+  .inner_text {
+    margin: auto;
+  }
+  .inner_text_who,
+  .inner_text_who_txt {
+    text-align: center;
+  }
+  .cost {
+    font-size: 35px;
+  }
+  .description {
+    margin-top: -5%;
+  }
+  .text_zakuski {
+    font-size: 18px;
+  }
+  .menu_zakuski {
+    min-height: 0;
+  }
+  .names {
+    font-size: 30px;
+    margin-left: 15%;
+  }
+}
 
-  @media screen and (max-width: 650px) {
-    #crumbs {
-      font-size: 18pt;
-    }
-    .container1 {
-      min-width: 275px;
-      margin-bottom: 3%;
-      text-align: center;
-    }
-    #foot_container {
-      flex-flow: row wrap;
-      justify-content: center;
-    }
-    .crumbs_block {
-      padding: 0 15px;
-    }
-    .menu_img,
-    .menu_about {
-      min-width: 0;
-    }
+@media screen and (max-width: 536px) {
+  .inner_text {
+    width: 85%;
+  }
+  .inner_text_who_txt {
+    font-size: 25px;
+  }
+  .inner_text_hello {
+    font-size: 35pt;
+  }
+  .inner_text_hello_txt {
+    font-size: 25pt;
+  }
+  #first_block {
+    height: 450px;
   }
 }

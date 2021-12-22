@@ -9,6 +9,7 @@ a {
 }
 #header {
   border-bottom: 1px solid black;
+  z-index: 10;
 }
 header {
   display: -webkit-box !important;
@@ -58,7 +59,9 @@ header {
   background-image: url('../img/главная1.jpeg');
   background-size: cover;
 }
-
+#first_block .inner_text {
+  margin: auto;
+}
 #glavnaia1kartinka {
   height: 600px;
   width: 100%;
@@ -67,7 +70,7 @@ header {
 .inner_text {
   display: block;
   width: 55%;
-  margin: auto;
+  margin-left: 5%;
   padding-top: 10%;
   text-align: center;
 }
@@ -95,20 +98,22 @@ header {
   text-shadow: #000000 0 0 10px;
 }
 .inner_text_who_txt {
+  color: aliceblue;
+
   margin-top: 70px;
-  margin-left: -300px;
   font-size: 50px;
   text-shadow: #000000 0 0 10px;
   text-align: start;
 }
 #second_block {
   width: 100%;
-  height: 800px;
   background-image: url('../img/рррр.jpeg');
   background-size: cover;
 }
 
 .morebtn {
+  color: aliceblue;
+
   width: 150px;
   height: 60px;
   text-align: center;
@@ -119,7 +124,13 @@ header {
 .morebtn:hover {
   font-size: 32px;
 }
-
+.morebtn a {
+  transition: 0.4s;
+  color: aliceblue;
+}
+.morebtn a:hover {
+  color: rgb(222, 225, 228);
+}
 #third_block {
   width: 100%;
   height: 800px;
