@@ -1,3 +1,4 @@
+let content, filtered;
 function getResponse() {
   let page = window.location.pathname.split('/').pop();
 
@@ -15,17 +16,21 @@ function getResponse() {
 
   async function request(ref, num) {
     let response = await fetch(ref);
-    let content = await response.json();
+    content = await response.json();
     num === 1 ? Addcocktails(content) : Addmeal(content);
   }
 }
 getResponse();
-
+function refresh(isCheked) {
+  document.getElementById('main').innerHTML = '';
+  isCheked
+    ? Addcocktails(content.filter((item) => item.alcohol === 'low'))
+    : Addcocktails(content);
+}
 function Addcocktails(jsonresp) {
-  jsonresp
-    .filter((item) => item.alcohol === 'strong')
-    .map((item) => {
-      document.getElementById('main').innerHTML += `
+  document.getElementById('main').innerHTML = ``;
+  jsonresp.map((item) => {
+    document.getElementById('main').innerHTML += `
      <div class="menu_cocktails">
      <div class="menu_zakuski">
           <p class="names">${item.name}</p>
@@ -50,7 +55,7 @@ function Addcocktails(jsonresp) {
       </div>
 
     `;
-    });
+  });
 }
 
 function Addmeal(jsonresp) {

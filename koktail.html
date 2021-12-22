@@ -10,6 +10,16 @@
       <a href="menu.html" class="crumbs_block">Меню</a>
       <a href="koktail.html" class="crumbs_block">Коктейли</a>
     </div>
+    <div>
+      <label class="switch">
+        <input
+          type="checkbox"
+          class="filterOn"
+          onchange="refresh(document.querySelector(`.filterOn`).checked)"
+        />
+        <span class="slider round"></span>
+      </label>
+    </div>
     <main id="main">
       <script src="./js/script.js"></script>
     </main>
