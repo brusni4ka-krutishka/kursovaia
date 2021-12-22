@@ -3,6 +3,7 @@ document.getElementById('head').innerHTML = `<meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paradise</title>`;
 
