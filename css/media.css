@@ -163,4 +163,16 @@
   #first_block {
     height: 450px;
   }
+  #menu_bar h2 {
+    font-size: 70px;
+  }
+
+  .abob:nth-child(1) .menu_bar_item,
+  .abob:nth-child(2) .menu_bar_item,
+  .abob:nth-child(3) .menu_bar_item {
+    height: 300px;
+  }
+  .menu_bar_item_text {
+    padding-top: 230px;
+  }
 }
