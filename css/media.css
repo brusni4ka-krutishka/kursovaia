@@ -4,8 +4,6 @@
     padding-top: 4%;
   }
 }
-@media screen and (max-width: 1475px) {
-}
 
 @media screen and (max-width: 1400px) {
   .inner_text_who_txt {
@@ -55,5 +53,50 @@
   }
   .cost {
     font-size: 45px;
+  }
+}
+@media screen and (max-width: 875px) {
+  .menu_text {
+    font-size: 14pt;
+    padding-top: 3%;
+  }
+  .menu_name {
+    font-size: 23pt;
+  }
+}
+
+@media screen and (max-width: 732px) {
+  .menu_img,
+  .menu_about {
+    min-width: 364px;
+    width: 100%;
+  }
+  .menu_group:nth-child(2) img {
+    order: 0;
+  }
+  .menu_group {
+    margin-bottom: 7%;
+  }
+
+  @media screen and (max-width: 650px) {
+    #crumbs {
+      font-size: 18pt;
+    }
+    .container1 {
+      min-width: 275px;
+      margin-bottom: 3%;
+      text-align: center;
+    }
+    #foot_container {
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    .crumbs_block {
+      padding: 0 15px;
+    }
+    .menu_img,
+    .menu_about {
+      min-width: 0;
+    }
   }
 }
