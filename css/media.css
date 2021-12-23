@@ -104,6 +104,26 @@
   .menu_group {
     margin-bottom: 7%;
   }
+  .human_photo {
+    min-width: 352px;
+  }
+  .human {
+    justify-content: center;
+  }
+  .human_description {
+    margin-bottom: 8%;
+    margin-top: 8%;
+    font-size: 18pt;
+    width: 100%;
+  }
+  .human_photo,
+  .human_container {
+    width: 90%;
+  }
+  .portfolio {
+    font-size: 18pt;
+    line-height: 27px;
+  }
 }
 @media screen and (max-width: 650px) {
   #crumbs {

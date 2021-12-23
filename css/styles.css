@@ -472,6 +472,7 @@ input:checked + .slider:before {
 }
 .human {
   display: flex;
+  flex-flow: row wrap;
 }
 #people_container {
   width: 100%;
