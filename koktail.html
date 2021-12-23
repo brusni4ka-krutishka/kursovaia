@@ -16,9 +16,10 @@
         <input type="checkbox" class="filterOn" onchange="refresh()" />
         <span class="slider round"></span>
       </label>
-      <label id="checkboxes">
+      <label id="checkboxes" style="width: 50%">
         <label for="">Безалкогольные</label>
         <input
+          disabled
           type="radio"
           name="filter"
           class="radio"
@@ -27,6 +28,7 @@
           checked
         /><label for="">Слабоалкогольные</label>
         <input
+          disabled
           type="radio"
           name="filter"
           class="radio"
@@ -34,6 +36,7 @@
           onchange="refresh()"
         /><label for="">Сильноалкогольные</label>
         <input
+          disabled
           type="radio"
           name="filter"
           class="radio"

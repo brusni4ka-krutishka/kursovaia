@@ -1,4 +1,5 @@
-let content, filtered;
+let content, filtered, radioButtonArray, isCheked;
+
 function getResponse() {
   let page = window.location.pathname.split('/').pop();
 
@@ -23,16 +24,24 @@ function getResponse() {
 getResponse();
 
 function refresh() {
-  let isCheked = document.querySelector(`.filterOn`).checked;
-  filtered = Array.from(document.getElementsByClassName('radio')).filter(
-    (item) => item.checked
-  );
-  console.log(filtered.map((item) => item.value));
+  isCheked = document.querySelector(`.filterOn`).checked;
+  radioButtonArray = Array.from(document.getElementsByClassName('radio'));
+  filtered = radioButtonArray.filter((item) => item.checked);
 
   document.getElementById('main').innerHTML = '';
   isCheked
-    ? Addcocktails(content.filter((item) => item.alcohol == filtered[0].value))
-    : Addcocktails(content);
+    ? (() => {
+        Addcocktails(
+          content.filter((item) => item.alcohol == filtered[0].value)
+        );
+        radioButtonArray.map((item) => item.removeAttribute('disabled'));
+      })()
+    : (() => {
+        Addcocktails(content);
+        radioButtonArray.map((item) =>
+          item.setAttribute('disabled', 'disabled')
+        );
+      })();
 }
 
 function Addcocktails(jsonresp) {
@@ -101,10 +110,7 @@ function onEntry(entry) {
   });
 }
 
-let options = {
-  threshold: [0.3],
-};
-let observer = new IntersectionObserver(onEntry, options);
+let observer = new IntersectionObserver(onEntry, { threshold: [0.3] });
 let elements = document.querySelectorAll('.human, .portfolio');
 
 for (let elm of elements) {
