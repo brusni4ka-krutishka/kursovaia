@@ -102,7 +102,7 @@ function onEntry(entry) {
 }
 
 let options = {
-  threshold: [0.5],
+  threshold: [0.3],
 };
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll('.human, .portfolio');
