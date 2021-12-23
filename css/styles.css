@@ -463,3 +463,60 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* About */
+#about_container {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+.human {
+  display: flex;
+}
+#people_container {
+  width: 100%;
+}
+.human_photo,
+.human_container {
+  width: 50%;
+  border-radius: 50px;
+}
+.human:nth-child(2) .human_photo,
+.human:nth-child(5) .human_photo {
+  order: 2;
+}
+.human:nth-child(5) .human_photo {
+  margin-bottom: 3%;
+}
+#our_team {
+  margin-top: 2%;
+  font-size: 32pt;
+  font-weight: bold;
+}
+.team_parts {
+  font-size: 28pt;
+  font-weight: bold;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+.human_name {
+  font-size: 35pt;
+}
+.human_description {
+  font-size: 20pt;
+  width: 85%;
+  margin: 20% auto 0 auto;
+}
+.human_container {
+  padding-top: 5%;
+}
+.portfolio {
+  font-size: 25pt;
+  margin-bottom: 3%;
+}
+
+#about {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
