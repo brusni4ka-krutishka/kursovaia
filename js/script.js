@@ -21,12 +21,20 @@ function getResponse() {
   }
 }
 getResponse();
-function refresh(isCheked) {
+
+function refresh() {
+  let isCheked = document.querySelector(`.filterOn`).checked;
+  filtered = Array.from(document.getElementsByClassName('radio')).filter(
+    (item) => item.checked
+  );
+  console.log(filtered.map((item) => item.value));
+
   document.getElementById('main').innerHTML = '';
   isCheked
-    ? Addcocktails(content.filter((item) => item.alcohol === 'low'))
+    ? Addcocktails(content.filter((item) => item.alcohol == filtered[0].value))
     : Addcocktails(content);
 }
+
 function Addcocktails(jsonresp) {
   document.getElementById('main').innerHTML = ``;
   jsonresp.map((item) => {
