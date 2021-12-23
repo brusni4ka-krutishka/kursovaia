@@ -90,6 +90,12 @@
     font-size: 30pt;
     margin-top: 15%;
   }
+
+  .wrap_menu {
+    display: block;
+    margin-bottom: 2%;
+    line-height: 37px;
+  }
 }
 
 @media screen and (max-width: 732px) {
@@ -169,7 +175,11 @@
     margin-left: 15%;
   }
 }
-
+@media screen and (max-width: 580px) {
+  .head_container {
+    width: 95%;
+  }
+}
 @media screen and (max-width: 536px) {
   .inner_text {
     width: 85%;
@@ -202,5 +212,28 @@
     min-width: 0;
     width: 270px;
     height: 310px;
+  }
+  .human_photo {
+    min-width: 0;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  #nav_bar ul {
+    display: block;
+    text-align: center;
+  }
+  .wrap_menu {
+    line-height: 30px;
+  }
+  #logo {
+    width: inherit;
+  }
+
+  .team_parts {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+    padding: 5% 0;
   }
 }

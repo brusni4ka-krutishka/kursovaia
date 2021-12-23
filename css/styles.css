@@ -21,7 +21,10 @@ header {
   vertical-align: middle;
   position: fixed;
 }
-
+.wrap_menu {
+  display: flex;
+  gap: 55px;
+}
 .head_container {
   width: 80%;
   display: flex;
