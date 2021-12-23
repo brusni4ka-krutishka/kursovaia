@@ -475,6 +475,7 @@ input:checked + .slider:before {
 }
 .human {
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
 }
 #people_container {
@@ -483,6 +484,7 @@ input:checked + .slider:before {
 .human_photo,
 .human_container {
   width: 50%;
+  max-width: 500px;
   border-radius: 50px;
 }
 .human:nth-child(2) .human_photo,
