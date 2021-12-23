@@ -110,7 +110,7 @@ function onEntry(entry) {
   });
 }
 
-let observer = new IntersectionObserver(onEntry, { threshold: [0.3] });
+let observer = new IntersectionObserver(onEntry, { threshold: [0.2] });
 let elements = document.querySelectorAll('.human, .portfolio');
 
 for (let elm of elements) {

@@ -9,7 +9,6 @@
   .inner_text_who_txt {
     font-size: 34px;
   }
-
   .inner_text_hello {
     font-size: 55pt;
   }
@@ -25,7 +24,6 @@
   .inner_text_who {
     font-size: 60px;
   }
-
   .menu_name {
     font-size: 27pt;
   }
@@ -39,13 +37,13 @@
   #b {
     text-align: center;
   }
-
   .abob:nth-child(1) .menu_bar_item,
   .abob:nth-child(2) .menu_bar_item,
   .abob:nth-child(3) .menu_bar_item {
     width: 250px;
   }
 }
+
 @media screen and (max-width: 1070px) {
   .menu_name {
     padding-top: 3%;
@@ -57,6 +55,7 @@
     font-size: 45px;
   }
 }
+
 @media screen and (max-width: 875px) {
   .menu_text {
     font-size: 14pt;
@@ -68,6 +67,9 @@
   #menu_bar_container {
     /* justify-content: center; */
     max-width: 825px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
   #first_block {
@@ -78,6 +80,7 @@
   }
   .abob {
     margin-bottom: 5%;
+    -webkit-box-shadow: 5px -5px 30px;
     box-shadow: 5px -5px 30px;
   }
   .inner_text {
@@ -90,7 +93,6 @@
     font-size: 30pt;
     margin-top: 15%;
   }
-
   .wrap_menu {
     display: block;
     margin-bottom: 2%;
@@ -105,6 +107,8 @@
     width: 100%;
   }
   .menu_group:nth-child(2) img {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
     order: 0;
   }
   .menu_group {
@@ -114,6 +118,8 @@
     min-width: 352px;
   }
   .human {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .human_description {
@@ -131,6 +137,7 @@
     line-height: 27px;
   }
 }
+
 @media screen and (max-width: 650px) {
   #crumbs {
     font-size: 18pt;
@@ -141,7 +148,12 @@
     text-align: center;
   }
   #foot_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .crumbs_block {
@@ -175,11 +187,13 @@
     margin-left: 15%;
   }
 }
+
 @media screen and (max-width: 580px) {
   .head_container {
     width: 95%;
   }
 }
+
 @media screen and (max-width: 536px) {
   .inner_text {
     width: 85%;
@@ -199,7 +213,6 @@
   #menu_bar h2 {
     font-size: 70px;
   }
-
   .abob:nth-child(1) .menu_bar_item,
   .abob:nth-child(2) .menu_bar_item,
   .abob:nth-child(3) .menu_bar_item {
@@ -229,11 +242,10 @@
   #logo {
     width: inherit;
   }
-
   .team_parts {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
-
     padding: 5% 0;
   }
 }
+/*# sourceMappingURL=styles.css.map */
