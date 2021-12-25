@@ -53,14 +53,10 @@ function Addcocktails(jsonresp) {
           <div class="zakuski_photo">
             <img src="${item.imgsrc}" class="koktail_eda" />
             <div class="description">
-              <div>&nbsp;</div>
               <p class="cost">Цена: ${item.cost}</p>
               <div class="line"></div>
-              <div>&nbsp;</div>
               <p class="cost" id="weight">Объем: ${item.volume}</p>
-              <div>&nbsp;</div>
               <div class="line"></div>
-              <div>&nbsp;</div>
             </div>
           </div>
           <p class="text_zakuski">
@@ -82,14 +78,10 @@ function Addmeal(jsonresp) {
         <div class="zakuski_photo">
           <img src="${item.imgsrc}" class="photo_eda" />
           <div class="description">
-            <div>&nbsp;</div>
             <p class="cost">Цена: ${item.cost}</p>
             <div class="line"></div>
-            <div>&nbsp;</div>
             <p class="cost" id="weight">Вес: ${item.weight}</p>
-            <div>&nbsp;</div>
             <div class="line"></div>
-            <div>&nbsp;</div>
           </div>
         </div>
         <p class="text_zakuski">
@@ -102,7 +94,7 @@ function Addmeal(jsonresp) {
 }
 
 function onEntry(entry) {
-  entry.forEach((change) => {
+  entry.map((change) => {
     change.isIntersecting
       ? change.target.classList.add('element-show')
       : change.target.classList.remove('element-show');
@@ -110,15 +102,18 @@ function onEntry(entry) {
 }
 
 let observer = new IntersectionObserver(onEntry, { threshold: [0.2] });
-let elements = document.querySelectorAll('.human, .portfolio');
+let elements = document.querySelectorAll(
+  '.human, .portfolio,.menu_button,.menu_img,.menu_about, .abob, .inner_text, #foot_container, .containt'
+);
 
 for (let elm of elements) {
   observer.observe(elm);
 }
-let currentScroll = 0;
-window.addEventListener('scroll', (e) => {
-  let element = document.getElementById('header').classList;
 
+let currentScroll = 0,
+  element = document.getElementById('header').classList;
+
+window.addEventListener('scroll', (e) => {
   if (scrollY >= 100 && currentScroll < scrollY) {
     element.add('header_unshown');
     currentScroll = scrollY;
