@@ -1,4 +1,6 @@
-document.getElementById('footer').innerHTML = `<div id="foot_container">
+document.getElementById(
+  'footer'
+).innerHTML = `<div id="foot_container" class="ctails">
         <div class="container1">
           <p>Адрес: Бали, Индонезия</p>
           <br />

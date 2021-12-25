@@ -432,10 +432,6 @@ a {
   animation: GlobalOpacity 0.9s linear;
 }
 
-.menu_zakuski:first-child {
-  border-top: none;
-}
-
 .cost {
   font-size: 50px;
   margin: 10px;
