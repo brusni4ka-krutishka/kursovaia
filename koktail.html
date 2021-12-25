@@ -10,6 +10,58 @@
       <a href="menu.html" class="crumbs_block">Меню</a>
       <a href="koktail.html" class="crumbs_block">Коктейли</a>
     </div>
+
+    <div id="filter_container">
+      <div class="toggle">
+        <div style="display: flex; align-items: center">
+          Фильтр:&nbsp;
+          <label class="switch">
+            <input type="checkbox" class="filterOn" onchange="refresh()" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="parameters">
+        <label id="checkboxes">
+          <div id="labels">
+            <label class="label_alcohol" for=""
+              >Безалкогольные
+              <input
+                disabled
+                type="radio"
+                name="filter"
+                class="radio"
+                value="free"
+                onchange="refresh()"
+                checked
+              />
+            </label>
+            <label class="label_alcohol" for=""
+              >Слабоалкогольные
+              <input
+                disabled
+                type="radio"
+                name="filter"
+                class="radio"
+                value="low"
+                onchange="refresh()"
+              />
+            </label>
+            <label class="label_alcohol" for=""
+              >Крепкие
+              <input
+                disabled
+                type="radio"
+                name="filter"
+                class="radio"
+                value="strong"
+                onchange="refresh()"
+              />
+            </label>
+          </div>
+        </label>
+      </div>
+    </div>
     <main id="main">
       <script src="./js/script.js"></script>
     </main>
