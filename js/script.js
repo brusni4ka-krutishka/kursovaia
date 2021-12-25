@@ -13,10 +13,11 @@ function getResponse() {
       request(`https://api.npoint.io/cd8bc0116679705d3efa`, 2);
       break;
   }
+  //Асинхронная ф-ция, отправляет запрос и получает ответ
 
   async function request(ref, num) {
     let response = await fetch(ref);
-    content = await response.json();
+    content = await response.json(); //Преобразовывает ответ сервера в JSON
     num === 1 ? Addcocktails(content) : Addmeal(content);
   }
 }
@@ -64,7 +65,6 @@ function Addcocktails(jsonresp) {
           </p>
         </div>
       </div>      
-      </div>
 
     `;
   });
@@ -103,22 +103,20 @@ function onEntry(entry) {
 
 let observer = new IntersectionObserver(onEntry, { threshold: [0.2] });
 let elements = document.querySelectorAll(
-  '.human, .portfolio,.menu_button,.menu_img,.menu_about, .abob, .inner_text, #foot_container, .containt'
+  '.human, .portfolio,.menu_button,.menu_img,.menu_about, .abob, .inner_text, .containt'
 );
 
 for (let elm of elements) {
   observer.observe(elm);
 }
 
+// Прятающееся верхнее меню
 let currentScroll = 0,
   element = document.getElementById('header').classList;
 
 window.addEventListener('scroll', (e) => {
-  if (scrollY >= 100 && currentScroll < scrollY) {
-    element.add('header_unshown');
-    currentScroll = scrollY;
-  } else if (currentScroll > scrollY) {
-    element.remove('header_unshown');
-    currentScroll = scrollY;
-  }
+  scrollY >= 100 && currentScroll < scrollY
+    ? element.add('header_unshown')
+    : element.remove('header_unshown');
+  currentScroll = scrollY;
 });
