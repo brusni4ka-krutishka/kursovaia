@@ -18,6 +18,12 @@
 }
 
 @media screen and (max-width: 1290px) {
+  /* #header {
+    height: 90px;
+  }
+  #crumbs {
+    padding-top: 90px;
+  } */
   #menu_bar {
     width: 95%;
   }

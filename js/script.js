@@ -2,7 +2,6 @@ let content, filtered, radioButtonArray, isCheked;
 
 function getResponse() {
   let page = window.location.pathname.split('/').pop();
-
   switch (page) {
     case 'koktail.html':
       request(`https://api.npoint.io/1316454332ee5e08f86d`, 1);
@@ -116,3 +115,15 @@ let elements = document.querySelectorAll('.human, .portfolio');
 for (let elm of elements) {
   observer.observe(elm);
 }
+let currentScroll = 0;
+window.addEventListener('scroll', (e) => {
+  let element = document.getElementById('header').classList;
+
+  if (scrollY >= 100 && currentScroll < scrollY) {
+    element.add('header_unshown');
+    currentScroll = scrollY;
+  } else if (currentScroll > scrollY) {
+    element.remove('header_unshown');
+    currentScroll = scrollY;
+  }
+});

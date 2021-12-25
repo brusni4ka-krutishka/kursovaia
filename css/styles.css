@@ -13,9 +13,6 @@ a {
 #header {
   border-bottom: 1px solid black;
   z-index: 10;
-}
-
-header {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -24,6 +21,11 @@ header {
   background: white;
   vertical-align: middle;
   position: fixed;
+  transition: 0.4s ease-in-out;
+  top: 0;
+}
+.header_unshown {
+  top: -150px !important;
 }
 
 .wrap_menu {
@@ -156,6 +158,7 @@ header {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   color: aliceblue;
+  text-shadow: black 0 0 10px;
 }
 
 .morebtn a:hover {
@@ -401,8 +404,6 @@ header {
   background: white;
   width: 100%;
   height: 100%;
-  min-height: 600px;
-  max-height: 900px;
   border-top: 1px solid black;
 }
 
@@ -655,4 +656,43 @@ input:checked + .slider:before {
   justify-content: center;
   margin-top: 0;
 }
-/*# sourceMappingURL=styles.css.map */
+
+#checkboxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.radio {
+  width: 25px;
+  height: 25px;
+  margin-right: 3%;
+  border-right: 1px solid;
+}
+.label_alcohol:last-child {
+  border-right: 1px solid;
+}
+.label_alcohol {
+  border-left: 1px solid;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  padding: 0 3% 0 3%;
+}
+#filter_container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  gap: 5%;
+  flex-flow: row wrap;
+}
+.parameters {
+  /* margin: auto; */
+}
+
+.toggle {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+/*# sourceMappingURL=styles.css.map */ ;

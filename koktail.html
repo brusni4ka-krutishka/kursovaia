@@ -10,47 +10,54 @@
       <a href="menu.html" class="crumbs_block">Меню</a>
       <a href="koktail.html" class="crumbs_block">Коктейли</a>
     </div>
-    <div
-      style="
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        padding: 1% 0;
-      "
-    >
-      Фильтр:&nbsp;
-      <label class="switch">
-        <input type="checkbox" class="filterOn" onchange="refresh()" />
-        <span class="slider round"></span>
-      </label>
-      <label id="checkboxes" style="width: 50%">
-        <label for="">Безалкогольные</label>
-        <input
-          disabled
-          type="radio"
-          name="filter"
-          class="radio"
-          value="free"
-          onchange="refresh()"
-          checked
-        /><label for="">Слабоалкогольные</label>
-        <input
-          disabled
-          type="radio"
-          name="filter"
-          class="radio"
-          value="low"
-          onchange="refresh()"
-        /><label for="">Сильноалкогольные</label>
-        <input
-          disabled
-          type="radio"
-          name="filter"
-          class="radio"
-          value="strong"
-          onchange="refresh()"
-        />
-      </label>
+
+    <div id="filter_container">
+      <div class="toggle">
+        <div style="display: flex; align-items: center">
+          Фильтр:&nbsp;
+          <label class="switch">
+            <input type="checkbox" class="filterOn" onchange="refresh()" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="parameters">
+        <label id="checkboxes">
+          <div style="display: flex; align-items: center">
+            <label class="label_alcohol" for=""
+              >Безалкогольные
+              <input
+                disabled
+                type="radio"
+                name="filter"
+                class="radio"
+                value="free"
+                onchange="refresh()"
+                checked
+            /></label>
+            <label class="label_alcohol" for=""
+              >Слабоалкогольные
+              <input
+                disabled
+                type="radio"
+                name="filter"
+                class="radio"
+                value="low"
+                onchange="refresh()"
+            /></label>
+            <label class="label_alcohol" for=""
+              >Крепкие
+              <input
+                disabled
+                type="radio"
+                name="filter"
+                class="radio"
+                value="strong"
+                onchange="refresh()"
+            /></label>
+          </div>
+        </label>
+      </div>
     </div>
     <main id="main">
       <script src="./js/script.js"></script>
