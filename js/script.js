@@ -2,6 +2,7 @@ let content, filtered, radioButtonArray, isCheked;
 
 function getResponse() {
   let page = window.location.pathname.split('/').pop();
+
   switch (page) {
     case 'koktail.html':
       request(`https://api.npoint.io/1316454332ee5e08f86d`, 1);
@@ -11,6 +12,8 @@ function getResponse() {
       break;
     case 'desert.html':
       request(`https://api.npoint.io/cd8bc0116679705d3efa`, 2);
+      break;
+    default:
       break;
   }
   //Асинхронная ф-ция, отправляет запрос и получает ответ
@@ -25,23 +28,20 @@ getResponse();
 
 function refresh() {
   isCheked = document.querySelector(`.filterOn`).checked;
-  radioButtonArray = Array.from(document.getElementsByClassName('radio'));
+  radioButtonArray = [...document.getElementsByClassName('radio')];
   filtered = radioButtonArray.filter((item) => item.checked);
 
   document.getElementById('main').innerHTML = '';
-  isCheked
-    ? (() => {
-        Addcocktails(
-          content.filter((item) => item.alcohol == filtered[0].value)
-        );
-        radioButtonArray.map((item) => item.removeAttribute('disabled'));
-      })()
-    : (() => {
-        Addcocktails(content);
-        radioButtonArray.map((item) =>
-          item.setAttribute('disabled', 'disabled')
-        );
-      })();
+  Addcocktails(
+    isCheked
+      ? content.filter((item) => item.alcohol == filtered[0].value)
+      : content
+  );
+  radioButtonArray.map((item) =>
+    isCheked
+      ? item.removeAttribute('disabled')
+      : item.setAttribute('disabled', 'disabled')
+  );
 }
 
 function Addcocktails(jsonresp) {
